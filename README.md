@@ -1,6 +1,4 @@
 # airbnb-clone-project
-
-
 ## Team Roles
 
 In order to successfully build and maintain the AirBnB Clone project, the project team will include the following roles:
