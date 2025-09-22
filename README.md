@@ -22,3 +22,22 @@ In order to successfully build and maintain the AirBnB Clone project, the projec
 
 - **QA / Tester**  
   Tests the application for bugs, performance issues, and ensures that features meet the project requirements and quality standards.
+
+## Technology Stack
+
+The AirBnB Clone project leverages a variety of technologies to build a full-featured, responsive, and scalable application:
+
+- **Django**: A high-level Python web framework used for building the backend, handling business logic, user authentication, and creating RESTful APIs with Django REST Framework.  
+
+- **Django REST Framework (DRF)**: A toolkit for building Web APIs on top of Django, providing serialization, authentication, and easy handling of HTTP requests.  
+
+- **React**: A JavaScript library used for building the front-end user interface, creating dynamic and responsive web pages, and interacting with the backend APIs.  
+
+- **PostgreSQL**: A relational database management system used to store and manage the project’s data, including user accounts, property listings, bookings, and reviews.  
+
+- **HTML/CSS/JavaScript**: Core front-end technologies used to structure, style, and add interactivity to web pages.  
+
+- **Git & GitHub**: Version control system and repository hosting service used to manage the project’s source code, track changes, and collaborate with team members.  
+
+- **Heroku / AWS (optional)**: Cloud platforms used to deploy the application and make it accessible to users online.
+
