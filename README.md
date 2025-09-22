@@ -95,3 +95,21 @@ The AirBnB Clone project will include the following key entities:
 - **Search and Filter**  
   Allows users to search for properties by location, price, availability, and other criteria. This feature improves user experience by helping guests find the most suitable listings quickly.
 
+## API Security
+
+Securing the backend APIs is crucial to protect user data, maintain trust, and ensure the integrity of the application. The following key security measures will be implemented:
+
+- **Authentication**  
+  Users must log in to access protected endpoints. This ensures that only registered users can perform actions such as booking properties, leaving reviews, or managing listings.  
+
+- **Authorization**  
+  Access control is enforced so that users can only perform actions they are permitted to. For example, only a host can update or delete their own properties, and only the guest who made a booking can cancel it.  
+
+- **Rate Limiting**  
+  Limits the number of requests a user or IP can make in a given period. This helps prevent abuse, DDoS attacks, and reduces server overload.  
+
+- **Data Validation and Sanitization**  
+  All input data is validated and sanitized to prevent malicious data from causing security vulnerabilities, such as SQL injection or XSS attacks.  
+
+- **Secure Payment Handling**  
+  Payment information is handled securely using encryption and third-party payment gateways. This protects sensitive financial data and ensures safe transactions.
