@@ -41,3 +41,37 @@ The AirBnB Clone project leverages a variety of technologies to build a full-fea
 
 - **Heroku / AWS (optional)**: Cloud platforms used to deploy the application and make it accessible to users online.
 
+
+## Database Design
+
+The AirBnB Clone project will include the following key entities:
+
+- **Users**  
+  Fields: `id`, `username`, `email`, `password`, `is_host`  
+  - Each user can act as a guest or a host.  
+  - A user can have multiple properties (if they are a host) and multiple bookings (as a guest).  
+
+- **Properties**  
+  Fields: `id`, `title`, `description`, `location`, `price_per_night`, `host_id`  
+  - Each property is owned by a host (user).  
+  - A property can have multiple bookings and multiple reviews.  
+
+- **Bookings**  
+  Fields: `id`, `property_id`, `guest_id`, `start_date`, `end_date`, `total_price`  
+  - A booking belongs to a single property and a single guest (user).  
+
+- **Reviews**  
+  Fields: `id`, `property_id`, `guest_id`, `rating`, `comment`, `created_at`  
+  - Reviews are associated with a property and the guest who left the review.  
+
+- **Payments**  
+  Fields: `id`, `booking_id`, `amount`, `payment_method`, `status`, `payment_date`  
+  - Each payment is linked to a booking and records the transaction details.  
+
+### Relationships
+- A **User** can have multiple **Properties** (as a host).  
+- A **User** can have multiple **Bookings** (as a guest).  
+- A **Property** can have multiple **Bookings** and **Reviews**.  
+- Each **Booking** is linked to one **Property** and one **Guest (User)**.  
+- Each **Payment** is associated with a single **Booking**.
+
