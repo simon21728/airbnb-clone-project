@@ -113,3 +113,18 @@ Securing the backend APIs is crucial to protect user data, maintain trust, and e
 
 - **Secure Payment Handling**  
   Payment information is handled securely using encryption and third-party payment gateways. This protects sensitive financial data and ensures safe transactions.
+
+## CI/CD Pipeline
+
+**Continuous Integration (CI)** and **Continuous Deployment (CD)** pipelines automate the process of building, testing, and deploying the application. They help ensure that code changes are integrated smoothly, tested automatically, and deployed reliably to production or staging environments.
+
+**Importance for the Project:**  
+- Reduces the chance of introducing bugs or breaking existing features.  
+- Speeds up development by automating testing and deployment.  
+- Ensures consistent and reproducible builds across environments.
+
+**Tools that could be used:**  
+- **GitHub Actions**: Automates builds, tests, and deployments directly from the repository.  
+- **Docker**: Packages the application and its dependencies into containers for consistent deployment.  
+- **Heroku / AWS / DigitalOcean**: Cloud platforms for deploying and hosting the application.  
+- **pytest / Django Test Framework**: For automated testing as part of the CI pipeline.
